@@ -1,0 +1,8 @@
+open xamp admin database in your browser 
+create the chat app database with the name "ajax-php"
+create two tables, the first one as "messages" and second one as "users"
+for the "messages" table create 5 columns namely in this order "id", "incoming_msg_id", "outgoing_msg_id", "message", "created_at"
+for the "users" table create 9 columns namely in this order "id", "firstname", "lastname", "email", "password", "image", "status", "unique_id", "created_at"
+
+
+Enjoy!
