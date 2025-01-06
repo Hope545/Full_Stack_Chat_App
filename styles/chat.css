@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* Chat Area CSS Code */
+.chat-area header {
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+}
+
+.chat-area {
+  width: 447px;
+  border-radius: 20px;
+}
+
+.chat-area header img {
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.chat-area header .back-icon {
+  font-size: 18px;
+  color: #333;
+}
+
+.chat-area header p {
+  color: rgba(0, 0, 0, 0.558);
+  font-weight: 500;
+}
+
+.chat-box {
+  height: 500px;
+  background-color: #f7f7f7;
+  padding: 10px 30px 20px 30px;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.133),
+    inset -1px -1px rgba(0, 0, 0, 0.133);
+  overflow-y: auto;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 0;
+}
+
+.chat-box .outgoing {
+  display: flex;
+}
+
+.chat-box .chat p {
+  padding: 8px 16px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.133);
+  word-wrap: break-word;
+}
+
+.chat-box .chat {
+  margin: 15px 0;
+}
+
+.outgoing .details p {
+  background-color: #333;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+
+.outgoing .details {
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+
+.chat-box .incoming {
+  display: flex;
+  align-items: center;
+}
+.chat-box .incoming img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.incoming .details p {
+  background-color: #fff;
+  color: #333;
+  border-radius: 18px 18px 18px 0;
+}
+
+.incoming .details {
+  margin-right: auto;
+  max-width: calc(100% - 130px);
+}
+
+.chat-area .typing-area {
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typing-area input {
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 17px;
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.typing-area button {
+  width: 55px;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 25px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
